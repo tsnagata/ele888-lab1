@@ -62,7 +62,7 @@ posteriors_x=[pos11,pos12];
 
 disp('Discriminant function for the test feature');
 
-[~,I]=min(posteriors_x);
+[~,I]=max(posteriors_x);
 
 g_x = I % compute the g(x) for min err rate classifier.
 
