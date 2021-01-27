@@ -109,3 +109,11 @@ axis([4 7 1 5]);
 
 errorX1 = (length(f1(find(la==1&f1>Th1)))+length(f1(find(la==2&f1<Th1))))/length(f1(find(la==1|la==2)))
 errorX2 = (length(f2(find(la==1&f2<Th2)))+length(f2(find(la==2&f2>Th2))))/length(f2(find(la==1|la==2)))
+
+%% Lab 1 Part 2
+
+x1 = [[2 6]; [4.4 3]; [5 3.5]; [5.3 2]; [5.5 2.5]; [6.6 3.5]; [4.5 6.1];[6.8 2.7]]
+
+for i = 1:length(x1)
+   [posteriors_x,g_x]=lab1_pt2(x1(i,:),trainingSet);
+end
